@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #2f73f2;
+  --color-secondary: #f5f9ff;
+  --color-lightgrey: #547593;
+  --color-darkmode: #081738;
+  --color-darklight: #000f30;
+  --color-darkblue: #102d47;
+  --color-lightdarkblue: #112145;
+
+  /* spacing */
+  --spacing-45: 45%;
+
+  /* breakpoint */
+  --breakpoint-xs: 420px;
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-7xl mx-auto w-full px-4;
+  }
+
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .card-shadow {
+    @apply shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(47,115,242,0.2)] transition-all duration-300;
+  }
+
+  .dark .card-shadow {
+    @apply shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:shadow-[0_8px_30px_rgb(47,115,242,0.15)];
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-linear-to-r from-primary to-blue-400;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white dark:bg-darklight text-darkblue dark:text-white transition-colors duration-300;
+  }
+
+  section {
+    @apply py-20 overflow-hidden;
+  }
+
+  h1 {
+    @apply text-darkblue dark:text-white capitalize md:text-6xl text-4xl font-bold xl:leading-tight leading-loose;
+  }
+
+  h2 {
+    @apply text-darkblue dark:text-white capitalize md:text-5xl text-3xl font-bold mb-6;
+  }
+
+  h3 {
+    @apply text-darkblue dark:text-white capitalize text-2xl font-semibold mb-4;
+  }
+
+  p {
+    @apply text-lightgrey text-base leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300 shadow-lg shadow-primary/20 hover:-translate-y-1 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-primary text-primary dark:text-white rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 hover:-translate-y-1 active:translate-y-0;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes progressLoad {
+  from { width: 0; }
+  to { width: var(--progress-width); }
+}
+
+.progress-fill {
+  animation: progressLoad 1.5s ease-out forwards;
+}

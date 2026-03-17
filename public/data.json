@@ -1,0 +1,389 @@
+{
+  "HeroData": [
+    {
+      "imgSrc": "/images/bike.png"
+    },
+    {
+      "imgSrc": "/images/eatiz.png"
+    },
+    {
+      "imgSrc": "/images/food.png"
+    },
+    {
+      "imgSrc": "/images/shose.png"
+    }
+  ],
+  "StatsData": [
+    {
+      "label": "Years Experience",
+      "value": "5+",
+      "icon": "lucide:calendar"
+    },
+    {
+      "label": "Projects Completed",
+      "value": "50+",
+      "icon": "lucide:briefcase"
+    },
+    {
+      "label": "Happy Clients",
+      "value": "30+",
+      "icon": "lucide:users"
+    },
+    {
+      "label": "Cups of Coffee",
+      "value": "1.2k",
+      "icon": "lucide:coffee"
+    }
+  ],
+  "ServicesData": [
+    {
+      "title": "Web Development",
+      "desc": "Custom, responsive websites built with modern frameworks like React and Next.js for high performance.",
+      "icon": "lucide:code-2"
+    },
+    {
+      "title": "UI/UX Design",
+      "desc": "User-centric interface design using Figma, focusing on intuitive interactions and modern aesthetics.",
+      "icon": "lucide:layout-template"
+    },
+    {
+      "title": "E-commerce Development",
+      "desc": "Building powerful online stores with Shopify and WordPress, optimized for conversions and growth.",
+      "icon": "lucide:shopping-cart"
+    },
+    {
+      "title": "Backend API Development",
+      "desc": "Robust server-side logic and RESTful APIs using Node.js, Express, and secure database management.",
+      "icon": "lucide:database"
+    }
+  ],
+  "ExperienceData": [
+    {
+      "year": "2024 - Present",
+      "title": "Senior Frontend Engineer",
+      "company": "Freelance Professional",
+      "desc": "Leading end-to-end development of high-performance web apps and mentoring junior devs on React/Next.js."
+    },
+    {
+      "year": "2022 - 2023",
+      "title": "Full Stack Developer",
+      "company": "Tech Solutions Hub",
+      "desc": "Developed scalable MERN stack applications and optimized frontend performance for international clients."
+    },
+    {
+      "year": "2020 - 2021",
+      "title": "Junior Web Developer",
+      "company": "Digital Agency",
+      "desc": "Started journey with HTML/CSS and WordPress, gradually mastering JavaScript and modern frameworks."
+    }
+  ],
+  "SkillProgressData": [
+    {
+      "name": "React.js",
+      "level": 95,
+      "icon": "logos:react"
+    },
+    {
+      "name": "Next.js",
+      "level": 92,
+      "icon": "logos:nextjs-icon"
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 98,
+      "icon": "logos:tailwindcss-icon"
+    },
+    {
+      "name": "JavaScript",
+      "level": 90,
+      "icon": "logos:javascript"
+    },
+    {
+      "name": "Node.js",
+      "level": 85,
+      "icon": "logos:nodejs-icon"
+    },
+    {
+      "name": "MongoDB",
+      "level": 80,
+      "icon": "logos:mongodb-icon"
+    }
+  ],
+  "NavLinkData": [
+    {
+      "label": "About Me",
+      "href": "/#about"
+    },
+    {
+      "label": "Technical Skills",
+      "href": "/#expertise"
+    },
+    {
+      "label": "Recent Projects",
+      "href": "/#project"
+    },
+    {
+      "label": "Contact Me",
+      "href": "/#contact"
+    }
+  ],
+  "ProjectData": [
+    {
+      "coverImg": "/images/project/eatiz_app.png",
+      "name": "Eatiz Restaurant App",
+      "category": "React",
+      "tech": [
+        "React",
+        "Tailwind",
+        "Firebase"
+      ],
+      "live": "https://eatiz-restaurant-updated.vercel.app/landing",
+      "github": "https://github.com/codebyqamarshah-code"
+    },
+    {
+      "coverImg": "/images/project/invoice_builder.png",
+      "name": "Free Invoice Builder",
+      "category": "Next.js",
+      "tech": [
+        "Next.js",
+        "Tailwind CSS",
+        "Auth"
+      ],
+      "live": "https://invoicebuilder-five.vercel.app/",
+      "github": "https://github.com/codebyqamarshah-code"
+    },
+    {
+      "coverImg": "/images/project/foodeiblog.png",
+      "name": "FoodeiBlog Platform",
+      "category": "UI/UX",
+      "tech": [
+        "React",
+        "SASS",
+        "Node.js"
+      ],
+      "live": "#",
+      "github": "https://github.com/codebyqamarshah-code"
+    },
+    {
+      "coverImg": "/images/project/game_warrior.png",
+      "name": "Game Warrior Gaming Site",
+      "category": "React",
+      "tech": [
+        "React",
+        "Redux",
+        "API"
+      ],
+      "live": "#",
+      "github": "https://github.com/codebyqamarshah-code"
+    },
+    {
+      "coverImg": "/images/project/livedoc.png",
+      "name": "Live Doc Health Portal",
+      "category": "React",
+      "tech": [
+        "React",
+        "Express",
+        "MongoDB"
+      ],
+      "live": "#",
+      "github": "https://github.com/codebyqamarshah-code"
+    },
+    {
+      "coverImg": "/images/project/chain.png",
+      "name": "Blockchain Landing Page",
+      "category": "UI/UX",
+      "tech": [
+        "Next.js",
+        "GSAP",
+        "Tailwind"
+      ],
+      "live": "#",
+      "github": "https://github.com/codebyqamarshah-code"
+    },
+    {
+      "coverImg": "/images/project/real_estate.png",
+      "name": "Premium Real Estate Hub",
+      "category": "Next.js",
+      "tech": [
+        "Next.js 15",
+        "Lucide Icons",
+        "Tailwind"
+      ],
+      "live": "https://real-estate-delta-indol.vercel.app/",
+      "github": "https://github.com/codebyqamarshah-code"
+    }
+  ],
+  "RecordData": [
+    {
+      "imgSrc": "/images/records/star.svg",
+      "digit": "4.9 Rating",
+      "desc": "Rated by clients on Freelance and Direct projects"
+    },
+    {
+      "imgSrc": "/images/records/user.svg",
+      "digit": "30+ Clients",
+      "desc": "Happy clients from Pakistan and international markets"
+    },
+    {
+      "imgSrc": "/images/records/cart.svg",
+      "digit": "50+ Projects",
+      "desc": "Delivered web apps, portfolios, and e-commerce stores"
+    },
+    {
+      "imgSrc": "/images/records/star.svg",
+      "digit": "5+ Years",
+      "desc": "Experience in modern web development and design"
+    }
+  ],
+  "ReviewData": [
+    {
+      "imgSrc": "/images/1.webp",
+      "name": "Ahmad Raza",
+      "rating": 5,
+      "desc": "Syed Qamar Abbas is an exceptional developer. He delivered our Next.js project ahead of schedule with remarkable code quality and responsiveness. Highly Professional!"
+    },
+    {
+      "imgSrc": "/images/1.webp",
+      "name": "Sara Khan",
+      "rating": 5,
+      "desc": "Transformed our e-commerce vision into reality. His attention to detail and UI/UX expertise significantly improved our site's conversion rate."
+    },
+    {
+      "imgSrc": "/images/1.webp",
+      "name": "Ali Hassan",
+      "rating": 5,
+      "desc": "A true full-stack expert. Handled everything from database architecture to frontend animations seamlessly. Great communication throughout the project."
+    }
+  ],
+  "SpecializeData": [
+    {
+      "imgSrc": "/images/specialization/webdesign.svg",
+      "title": "Frontend Mastery",
+      "desc": "Expert in HTML5, CSS3 (SASS/SCSS), JavaScript (ES6+), and Tailwind CSS for building pixel-perfect, responsive UIs."
+    },
+    {
+      "imgSrc": "/images/specialization/logodesign.svg",
+      "title": "React & Next.js",
+      "desc": "Specializing in high-performance web apps using Next.js 14/15, Server Components, and State Management (Redux/Zustand)."
+    },
+    {
+      "imgSrc": "/images/specialization/mobileapp.svg",
+      "title": "Backend Development",
+      "desc": "Building robust server-side logic with Node.js, Express, and Database management with MongoDB and Firebase."
+    },
+    {
+      "imgSrc": "/images/specialization/contentwrite.svg",
+      "title": "E-commerce Solutions",
+      "desc": "Developing custom online stores using Shopify Liquid and WordPress with a focus on conversion and speed."
+    },
+    {
+      "imgSrc": "/images/specialization/seooptimize.svg",
+      "title": "UI/UX & Design",
+      "desc": "Creating intuitive user experiences and high-fidelity mockups using Figma, centered on user-centric design principles."
+    },
+    {
+      "imgSrc": "/images/specialization/digitalmarketing.svg",
+      "title": "Deployment & DevOps",
+      "desc": "Streamlining workflows with Git/GitHub, CI/CD pipelines, and seamless deployments on Vercel and Netlify."
+    }
+  ],
+  "PlanData": [
+    {
+      "type": "Fixed Project",
+      "price": {
+        "monthly": 499,
+        "yearly": 4500
+      },
+      "desc": "Ideal for startups needing a single custom solution.",
+      "option": [
+        "In-depth Technical Consultation",
+        "Responsive Custom Development",
+        "SEO and Performance Optimization",
+        "15 Days Post-Launch Support",
+        "Source Code & Documentation"
+      ]
+    },
+    {
+      "type": "Monthly Retainer",
+      "featured": true,
+      "price": {
+        "monthly": 1499,
+        "yearly": 15000
+      },
+      "desc": "Perfect for businesses needing ongoing development.",
+      "option": [
+        "Dedicated Weekly Dev Hours",
+        "Priority Feature Development",
+        "Unlimited Technical Consultation",
+        "Continuous Performance Monitoring",
+        "24/7 Priority Support & Maintenance"
+      ]
+    }
+  ],
+  "CategoryData": [
+    {
+      "imgSrc": "/images/category/webdev.webp",
+      "title": "Frontend (HTML/CSS/JS)"
+    },
+    {
+      "imgSrc": "/images/category/logods.webp",
+      "title": "React.js & Next.js"
+    },
+    {
+      "imgSrc": "/images/category/mobileapp.webp",
+      "title": "Backend (MongoDB/APIs)"
+    },
+    {
+      "imgSrc": "/images/category/contentwrite.webp",
+      "title": "CMS (WordPress/Shopify)"
+    },
+    {
+      "imgSrc": "/images/category/digitalmarket.webp",
+      "title": "UI/UX & Figma"
+    }
+  ],
+  "FooterLinkData": [
+    {
+      "section": "Quick Links",
+      "links": [
+        {
+          "label": "About Me",
+          "href": "/#about"
+        },
+        {
+          "label": "Technical Skills",
+          "href": "/#expertise"
+        },
+        {
+          "label": "Recent Projects",
+          "href": "/#project"
+        },
+        {
+          "label": "Contact Me",
+          "href": "/#contact"
+        }
+      ]
+    },
+    {
+      "section": "Professional",
+      "links": [
+        {
+          "label": "GitHub Profile",
+          "href": "https://github.com/codebyqamarshah-code"
+        },
+        {
+          "label": "LinkedIn Profile",
+          "href": "https://www.linkedin.com/in/qamar-shah-developer"
+        },
+        {
+          "label": "Live Demo",
+          "href": "https://eatiz-restaurant-updated.vercel.app/landing"
+        },
+        {
+          "label": "Technical Resume",
+          "href": "/resume.pdf"
+        }
+      ]
+    }
+  ]
+}
