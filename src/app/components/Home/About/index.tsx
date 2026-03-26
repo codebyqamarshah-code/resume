@@ -50,7 +50,7 @@ const About = () => {
             </div>
             
             <p className='text-lg leading-relaxed text-lightgrey'>
-              With over 5 years of professional experience, I help companies and startups build custom web applications that scale. My approach focuses on user experience, performance, and clean architecture.
+              With over 1.5 years of professional experience, I help companies and startups build custom web applications that scale. My approach focuses on user experience, performance, and clean architecture.
             </p>
 
             <ul className="space-y-4 grid md:grid-cols-2 grid-cols-1 gap-2">
