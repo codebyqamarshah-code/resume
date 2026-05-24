@@ -21,7 +21,7 @@ const Services = () => {
   }, [])
 
   return (
-    <section id='services' className='py-24 bg-white dark:bg-darklight'>
+    <section id='services' className='py-32 bg-darklight'>
       <div className='container'>
         <div className='text-center max-w-2xl mx-auto mb-16'>
           <p className="text-primary font-bold tracking-[4px] uppercase text-sm mb-4">What I Offer</p>
@@ -33,12 +33,15 @@ const Services = () => {
 
         <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8'>
           {services.map((service, i) => (
-            <div key={i} className='group p-10 rounded-[40px] bg-secondary dark:bg-lightdarkblue border border-black/5 dark:border-white/5 card-shadow transition-all duration-500 hover:-translate-y-2'>
-              <div className='w-20 h-20 rounded-3xl bg-primary/20 flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300'>
-                <Icon icon={service.icon} width={40} height={40} />
+            <div key={i} className='group p-10 rounded-[3rem] bg-secondary border border-white/5 card-shadow transition-all duration-500 hover:-translate-y-2 relative overflow-hidden'>
+              {/* Background Accent */}
+              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-[4rem] -mr-12 -mt-12 group-hover:bg-primary/10 transition-colors" />
+              
+              <div className='w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform'>
+                <Icon icon={service.icon} width={32} height={32} />
               </div>
-              <h3 className='text-2xl font-bold mb-4 group-hover:text-primary transition-colors'>{service.title}</h3>
-              <p className='text-base leading-relaxed text-lightgrey group-hover:text-darkblue dark:group-hover:text-white/80 transition-colors'>
+              <h3 className='text-xl font-bold mb-4 group-hover:text-primary transition-colors'>{service.title}</h3>
+              <p className='text-sm leading-relaxed text-lightgrey group-hover:text-darkblue dark:group-hover:text-white/80 transition-colors'>
                 {service.desc}
               </p>
             </div>

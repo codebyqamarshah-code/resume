@@ -22,17 +22,17 @@ const About = () => {
   }, [])
 
   return (
-    <section id='about' className='scroll-mt-12 py-24 bg-secondary dark:bg-darklight'>
+    <section id='about' className='scroll-mt-12 py-32 bg-darklight'>
       <div className='container px-4'>
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-20 items-center'>
           {/* Left Side: Stats Cards */}
-          <div className='grid grid-cols-2 gap-6 relative'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 relative'>
             <div className="absolute inset-0 bg-primary/10 blur-[80px] rounded-full z-0" />
             
             {stats.length > 0 ? stats.map((stat, i) => (
-              <div key={i} className={`z-10 p-8 rounded-3xl bg-white dark:bg-lightdarkblue border border-black/5 dark:border-white/5 shadow-xl transition-all duration-300 hover:border-primary/50 group ${i === 1 || i === 3 ? 'mt-8' : ''}`}>
+              <div key={i} className={`z-10 p-8 rounded-3xl bg-secondary border border-white/5 shadow-xl transition-all duration-300 hover:border-primary/50 group ${i % 2 !== 0 ? 'sm:mt-8' : ''}`}>
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-                  <Icon icon={stat.icon} width={30} height={30} />
+                   <Icon icon={stat.icon} width={30} height={30} />
                 </div>
                 <h2 className="text-4xl font-bold mb-2">{stat.value}</h2>
                 <p className="text-lightgrey text-base font-medium">{stat.label}</p>
@@ -50,7 +50,7 @@ const About = () => {
             </div>
             
             <p className='text-lg leading-relaxed text-lightgrey'>
-              With over 1.5 years of professional experience, I help companies and startups build custom web applications that scale. My approach focuses on user experience, performance, and clean architecture.
+              My web development journey began in early 2024 with a deep passion for creating digital experiences. Since then, I've been dedicated to mastering the modern stack, including React and Next.js. I'm constantly building projects, refining my skills, and staying up-to-date with industry trends to deliver the best results.
             </p>
 
             <ul className="space-y-4 grid md:grid-cols-2 grid-cols-1 gap-2">
@@ -60,7 +60,7 @@ const About = () => {
                 "Performance Optimization",
                 "Advanced React & Next.js",
                 "Modern UI/UX Implementation",
-                "Scalable Backend Systems"
+                "Interactive User Experiences"
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-base text-lightgrey">
                   <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
@@ -74,22 +74,15 @@ const About = () => {
             <div className='flex flex-wrap items-center gap-6 mt-6'>
               <a
                 href='/resume.pdf'
-                download
+                target='_blank'
+                rel='noopener noreferrer'
+                download='Syed-Qamar-Abbas-Resume.pdf'
                 className='btn-primary inline-flex items-center gap-3'
               >
                 <span>Download Resume</span>
                 <Icon icon="lucide:download" width={20} />
               </a>
-              <div className="flex items-center gap-4 py-2 px-6 rounded-full border border-black/10 dark:border-white/10 dark:bg-white/5">
-                <span className="text-sm font-medium">Ready to Discuss?</span>
-                <div className="flex -space-x-3">
-                  {[1, 2, 3].map(i => (
-                    <div key={i} className="w-8 h-8 rounded-full border-2 border-white dark:border-darklight bg-gray-200 overflow-hidden">
-                       <Image src={getImgPath(`/images/1.webp`)} alt="avatar" width={32} height={32} />
-                    </div>
-                  ))}
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

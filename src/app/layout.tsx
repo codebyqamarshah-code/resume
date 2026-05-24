@@ -12,10 +12,22 @@ const DMSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Syed Qamar Abbas | Full Stack Developer | React & Next.js Developer',
-  description: 'Syed Qamar Abbas is a Full Stack JavaScript Developer specializing in React.js, Next.js, Tailwind CSS, and MongoDB. View projects, portfolio, and deployed applications.',
-  keywords: 'Syed Qamar Abbas, React Developer, Next.js Developer, JavaScript Developer, Full Stack Developer, Tailwind CSS, MongoDB Developer, Web Developer Portfolio',
+  title: 'Syed Qamar Abbas | Passionate Full Stack Developer | Next.js Enthusiast',
+  description: 'Emerging Full Stack Developer specializing in modern web technologies like React, Next.js, and Tailwind CSS. Focused on building clean, efficient, and user-friendly web solutions.',
+  keywords: 'Syed Qamar Abbas, Full Stack Developer, React Developer, Next.js Learner, Web Development Journey, Modern Web Apps, UI/UX Enthusiast',
   authors: [{ name: 'Syed Qamar Abbas' }],
+  openGraph: {
+    title: 'Syed Qamar Abbas | Portfolio',
+    description: 'Modern, high-performance web solutions built with React & Next.js.',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Syed Qamar Abbas Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Syed Qamar Abbas | Full Stack Developer',
+    description: 'Modern web experiences and high-performance apps.',
+  }
 }
 
 export default function RootLayout({

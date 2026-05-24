@@ -25,30 +25,13 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer>
+    <footer className="bg-darkmode border-t border-white/5">
       <div className="container py-14">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-20 gap-5">
           <div className="w-fit">
             <Logo />
           </div>
-          <div className="flex sm:flex-row flex-col sm:items-center gap-8">
-            <p className="text-darkblue dark:text-white text-lg font-medium">
-              Newsletter
-            </p>
-            <div className="relative">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address*"
-                className="py-2.5 pl-3 pr-32 text-sm rounded-lg placeholder:text-lightgrey border border-lightgrey/30 focus:border-primary focus:outline-0 w-full"
-              />
-              <div className="absolute bottom-0 right-0">
-                <button className="px-4 py-2 text-base font-medium text-white border rounded-lg border-primary bg-primary">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
+
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-16 xl:gap-8">
           {/* CLOUMN-1 */}
@@ -65,14 +48,6 @@ const Footer = () => {
               <Link href="https://www.linkedin.com/in/qamar-shah-developer" target="_blank">
                 <Icon
                   icon="tabler:brand-linkedin"
-                  width={45}
-                  height={45}
-                  className="text-darkblue dark:text-white bg-darkmode/5 dark:bg-white/10 rounded-lg p-2 hover:text-primary dark:hover:text-primary duration-300"
-                />
-              </Link>
-              <Link href="https://eatiz-restaurant-updated.vercel.app/landing" target="_blank">
-                <Icon
-                  icon="tabler:world"
                   width={45}
                   height={45}
                   className="text-darkblue dark:text-white bg-darkmode/5 dark:bg-white/10 rounded-lg p-2 hover:text-primary dark:hover:text-primary duration-300"
@@ -161,7 +136,7 @@ const Footer = () => {
       </div>
       <div className="py-3">
         <p className="text-center">
-          &copy; 2025 Syed Qamar Abbas. All Rights Reserved. |{" "}
+          &copy; 2026 Syed Qamar Abbas. All Rights Reserved. |{" "}
           <Link
             href="mailto:codebyqamarshah@gmail.com"
             className="hover:text-primary dark:hover:text-primary"

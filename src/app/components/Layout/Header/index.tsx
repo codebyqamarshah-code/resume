@@ -80,68 +80,50 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 py-1 z-50 w-full bg-transparent transition-all ${
-        sticky ? 'shadow-lg dark:shadow-neutral-50/5 bg-white dark:bg-darklight' : 'shadow-none'
+      className={`fixed top-0 py-1 z-50 w-full transition-all duration-300 ${
+        sticky 
+          ? 'shadow-xl backdrop-blur-lg bg-white/80 dark:bg-darklight/80 border-b border-black/5 dark:border-white/5' 
+          : 'bg-transparent'
       }`}>
       <div
-        className={`container flex items-center justify-between gap-10 duration-300  ${
-          sticky ? 'py-3' : 'py-4'
+        className={`container flex items-center justify-between gap-10 duration-300 ${
+          sticky ? 'py-3' : 'py-5'
         }`}>
         <Logo />
-        <nav>
-          <ul className='hidden xl:flex flex-grow items-center justify-start gap-10 '>
+        
+        {/* Desktop Navigation */}
+        <nav className='hidden xl:block flex-grow ml-6'>
+          <ul className='flex items-center justify-center gap-8'>
             {navlink.map((item, index) => (
               <HeaderLink key={index} item={item} />
             ))}
           </ul>
         </nav>
-        <div className='flex items-center gap-4'>
-          <div>
-            <div className='relative hidden xl:block'>
-              <input
-                type='text'
-                placeholder='Search'
-                className='border rounded-lg pl-4 pr-8 py-2 border-primary/50 focus:border-primary outline-0 placeholder:text-primary/30'
-              />
-              <button>
-                <Icon
-                  icon={'solar:magnifer-linear'}
-                  width={17}
-                  height={17}
-                  className='text-primary text-bold absolute top-3 right-3'
-                />
-              </button>
-            </div>
+
+        <div className='flex items-center gap-3 md:gap-5'>
+          {/* Desktop Actions */}
+          <div className='hidden xl:flex items-center gap-6'>
+
+
+            <Link
+              href='/#contact'
+              className='btn-primary px-6 py-2.5 rounded-xl text-base shadow-lg shadow-primary/20 !text-black'>
+              Hire Me
+            </Link>
           </div>
-          <button
-            aria-label='Toggle theme'
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className='flex items-center justify-center text-body-color duration-300 hover:cursor-pointer hover:text-primary dark:text-white bg-neutral-50 rounded-full dark:bg-darklight p-2 outline-none'>
-            <Icon
-              icon='solar:sun-2-bold'
-              width='24'
-              height='24'
-              className='hidden dark:block'
-            />
-            <Icon
-              icon='solar:moon-bold'
-              width='24'
-              height='24'
-              className='dark:hidden block'
-            />
-          </button>
-          <Link
-            href='/#contact'
-            className='hidden xl:block px-4 py-2 bg-primary text-white rounded-lg outline-none hover:bg-transparent hover:text-primary border border-primary duration-500 text-base font-semibold'>
-            Contact Us
-          </Link>
+
+
+
+
+
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setNavbarOpen(!navbarOpen)}
-            className='block xl:hidden p-2 rounded-lg hover:cursor-pointer'
+            className='xl:hidden w-11 h-11 flex flex-col items-center justify-center gap-1.5 rounded-xl bg-secondary dark:bg-white/5 hover:bg-primary/10 transition-all active:scale-95'
             aria-label='Toggle mobile menu'>
-            <span className='block w-6 h-0.5 bg-darkblue dark:bg-white'></span>
-            <span className='block w-6 h-0.5 bg-darkblue dark:bg-white mt-1.5'></span>
-            <span className='block w-6 h-0.5 bg-darkblue dark:bg-white mt-1.5'></span>
+            <span className={`block w-6 h-0.5 bg-darkblue dark:bg-white transition-all transform ${navbarOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+            <span className={`block w-6 h-0.5 bg-darkblue dark:bg-white transition-all ${navbarOpen ? 'opacity-0' : ''}`}></span>
+            <span className={`block w-6 h-0.5 bg-darkblue dark:bg-white transition-all transform ${navbarOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
           </button>
         </div>
       </div>
@@ -150,59 +132,52 @@ const Header: React.FC = () => {
       )}
       <div
         ref={mobileMenuRef}
-        className={`xl:hidden fixed top-0 right-0 h-full w-full bg-white dark:bg-darklight shadow-lg transform transition-transform duration-300 max-w-xs ${
+        className={`xl:hidden fixed top-0 right-0 h-screen w-[85%] max-w-sm bg-white dark:bg-darklight shadow-2xl transform transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
           navbarOpen ? 'translate-x-0' : 'translate-x-full'
-        } z-50`}>
-        <div className='flex items-center justify-between p-4'>
+        } z-50 flex flex-col`}>
+        
+        {/* Header inside drawer */}
+        <div className='flex items-center justify-between p-6 border-b border-black/5 dark:border-white/5'>
           <Logo />
           <button
             onClick={() => setNavbarOpen(false)}
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary dark:bg-white/5 text-darkblue dark:text-white"
             aria-label='Close mobile menu'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='24'
-              height='24'
-              viewBox='0 0 24 24'
-              className='dark:text-white dark:hover:text-primary hover:text-primary hover:cursor-pointer'>
-              <path
-                fill='none'
-                stroke='currentColor'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M6 18L18 6M6 6l12 12'
-              />
-            </svg>
+            <Icon icon="lucide:x" width={24} />
           </button>
         </div>
-        <nav className='flex flex-col items-start p-4'>
-          {navlink.map((item, index) => (
-            <MobileHeaderLink key={index} item={item} />
-          ))}
-          <div className='mt-4 flex flex-col gap-4 w-full'>
-            <div className='relative w-full'>
-              <input
-                type='text'
-                placeholder='Search'
-                className='border rounded-lg pl-4 pr-8 py-2 border-primary/50 focus:border-primary outline-0 placeholder:text-primary/20 w-full'
-              />
-              <Icon
-                icon={'solar:magnifer-linear'}
-                width={17}
-                height={17}
-                className='text-primary text-bold absolute top-3 right-3'
-              />
-            </div>
+
+        {/* Navigation Links */}
+        <nav className='flex-grow overflow-y-auto p-6'>
+          <div className="space-y-2">
+            {navlink.map((item, index) => (
+              <div 
+                key={index} 
+                onClick={() => setNavbarOpen(false)}
+                className="transform transition-all duration-300"
+                style={{ transitionDelay: `${index * 50}ms` }}
+              >
+                <MobileHeaderLink item={item} />
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-10 pt-10 border-t border-black/5 dark:border-white/5 space-y-6">
+
+            
             <Link
               href='/#contact'
-              className='px-4 py-2 bg-primary text-white rounded-lg outline-none hover:bg-transparent hover:text-primary border border-primary duration-500 text-base font-semibold'
-              onClick={() => {
-                setNavbarOpen(false)
-              }}>
-              Contact Us
+              className='flex items-center justify-center w-full py-4 bg-primary text-black rounded-2xl font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all'
+              onClick={() => setNavbarOpen(false)}>
+              Start a Project
             </Link>
           </div>
         </nav>
+
+        {/* Footer inside drawer */}
+        <div className="p-8 bg-secondary/50 dark:bg-white/5 text-center">
+            <p className="text-xs text-lightgrey">© 2024 Syed Qamar Abbas. All rights reserved.</p>
+        </div>
       </div>
     </header>
   )

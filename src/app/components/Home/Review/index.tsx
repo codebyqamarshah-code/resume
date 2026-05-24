@@ -23,7 +23,7 @@ const Review = () => {
   }, [])
 
   return (
-    <section id='review' className='py-24 bg-secondary dark:bg-darklight'>
+    <section id='review' className='py-24 bg-darklight'>
       <div className='container overflow-hidden'>
         <div className='text-center max-w-2xl mx-auto mb-16'>
           <p className="text-primary font-bold tracking-[4px] uppercase text-sm mb-4">Client Feedback</p>
@@ -35,7 +35,7 @@ const Review = () => {
 
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
           {reviews.map((review, i) => (
-            <div key={i} className='group p-10 rounded-[3rem] bg-white dark:bg-lightdarkblue border border-black/5 dark:border-white/5 card-shadow transition-all duration-300 hover:border-primary/50 flex flex-col'>
+            <div key={i} className='group p-10 rounded-[3rem] bg-lightdarkblue border border-white/5 card-shadow transition-all duration-300 hover:border-primary/50 flex flex-col'>
               {/* Star Rating */}
               <div className="flex gap-1.5 mb-8">
                 {[...Array(5)].map((_, idx) => (

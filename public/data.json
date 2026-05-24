@@ -15,20 +15,24 @@
   ],
   "StatsData": [
     {
-      "label": "Years Experience",
-      "value": "1.5",
+      "label": "Experience (Start 2024)",
+      "value": "2st Year",
       "icon": "lucide:calendar"
     },
     {
       "label": "Projects Completed",
-      "value": "150",
+      "value": "50+",
       "icon": "lucide:briefcase"
     },
-    
     {
-      "label": "Cups of Coffee",
+      "label": "Happy Clients",
       "value": "30+",
-      "icon": "lucide:coffee"
+      "icon": "lucide:users"
+    },
+    {
+      "label": "Hours of Learning",
+      "value": "500+",
+      "icon": "lucide:book-open"
     }
   ],
   "ServicesData": [
@@ -56,70 +60,82 @@
   "ExperienceData": [
     {
       "year": "2024 - Present",
-      "title": "Senior Frontend Engineer",
-      "company": "Freelance Professional",
-      "desc": "Leading end-to-end development of high-performance web apps and mentoring junior devs on React/Next.js."
+      "title": "Full Stack Web Developer",
+      "company": "Independent Projects & Freelance",
+      "desc": "Began my professional journey in 2024, focusing on building modern web applications with React and Next.js. Constantly learning and delivering high-quality solutions for clients."
     },
     {
-      "year": "2022 - 2023",
-      "title": "Full Stack Developer",
-      "company": "Tech Solutions Hub",
-      "desc": "Developed scalable MERN stack applications and optimized frontend performance for international clients."
-    },
-    {
-      "year": "2020 - 2021",
-      "title": "Junior Web Developer",
-      "company": "Digital Agency",
-      "desc": "Started journey with HTML/CSS and WordPress, gradually mastering JavaScript and modern frameworks."
+      "year": "2024 (Early)",
+      "title": "Junior Frontend Learner",
+      "company": "Technical Training & Self-Study",
+      "desc": "Mastered the fundamentals of HTML, CSS, and JavaScript. Dedicated hundreds of hours to building responsive layouts and understanding web architecture."
     }
   ],
   "SkillProgressData": [
     {
-      "name": "React.js",
-      "level": 95,
-      "icon": "logos:react"
+      "name": "HTML5",
+      "icon": "logos:html-5"
     },
     {
-      "name": "Next.js",
-      "level": 92,
-      "icon": "logos:nextjs-icon"
+      "name": "CSS3",
+      "icon": "logos:css-3"
     },
     {
-      "name": "Tailwind CSS",
-      "level": 98,
+      "name": "Tailwind",
       "icon": "logos:tailwindcss-icon"
     },
     {
       "name": "JavaScript",
-      "level": 90,
       "icon": "logos:javascript"
     },
     {
-      "name": "Node.js",
-      "level": 85,
-      "icon": "logos:nodejs-icon"
+      "name": "React.js",
+      "icon": "logos:react"
+    },
+    {
+      "name": "Next.js",
+      "icon": "logos:nextjs-icon"
+    },
+    {
+      "name": "WordPress",
+      "icon": "logos:wordpress-icon"
+    },
+    {
+      "name": "Shopify",
+      "icon": "logos:shopify"
     },
     {
       "name": "MongoDB",
-      "level": 80,
       "icon": "logos:mongodb-icon"
+    },
+    {
+      "name": "UI/UX",
+      "icon": "solar:figma-bold-duotone"
     }
   ],
   "NavLinkData": [
     {
-      "label": "About Me",
+      "label": "About",
       "href": "/#about"
     },
     {
-      "label": "Technical Skills",
+      "label": "Skills",
       "href": "/#expertise"
     },
     {
-      "label": "Recent Projects",
+      "label": "Services",
+      "href": "/#services"
+    },
+    {
+      "label": "Projects",
       "href": "/#project"
     },
     {
-      "label": "Contact Me",
+      "label": "Pricing",
+      "href": "/#pricing"
+    },
+    {
+      "label": "Contact",
       "href": "/#contact"
     }
   ],
@@ -127,73 +143,38 @@
     {
       "coverImg": "/images/project/eatiz_app.png",
       "name": "Eatiz Restaurant App",
-      "category": "React",
+      "category": "Next.js",
       "tech": [
-        "React",
+        "Next.js",
         "Tailwind",
         "Firebase"
       ],
-      "live": "https://eatiz-restaurant-updated.vercel.app/landing",
-      "github": "https://github.com/codebyqamarshah-code"
+      "live": "https://eatiz-restaurant.vercel.app/",
+      "github": ""
+    },
+    {
+      "coverImg": "/images/project/a1cabs.png",
+      "name": "A1 Logistics & Car Transport",
+      "category": "Next.js",
+      "tech": [
+        "Next.js 15",
+        "Framer Motion",
+        "Tailwind CSS"
+      ],
+      "live": "https://a1cabs.uk/",
+      "github": ""
     },
     {
       "coverImg": "/images/project/invoice builder.png",
       "name": "Free Invoice Builder",
-      "category": "Next.js",
+      "category": "Tailwind",
       "tech": [
         "Next.js",
         "Tailwind CSS",
-        "Auth"
-      ],
-      "live": "#",
-      "github": "https://github.com/codebyqamarshah-code"
-    },
-    {
-      "coverImg": "/images/project/foodeiblog.png",
-      "name": "FoodeiBlog Platform",
-      "category": "UI/UX",
-      "tech": [
-        "React",
-        "SASS",
-        "Node.js"
-      ],
-      "live": "#",
-      "github": "https://github.com/codebyqamarshah-code"
-    },
-    {
-      "coverImg": "/images/project/game_warrior.png",
-      "name": "Game Warrior Gaming Site",
-      "category": "React",
-      "tech": [
-        "React",
-        "Redux",
-        "API"
-      ],
-      "live": "#",
-      "github": "https://github.com/codebyqamarshah-code"
-    },
-    {
-      "coverImg": "/images/project/livedoc.png",
-      "name": "Live Doc Health Portal",
-      "category": "React",
-      "tech": [
-        "React",
-        "Express",
+        "Auth",
         "MongoDB"
       ],
-      "live": "#",
-      "github": "https://github.com/codebyqamarshah-code"
-    },
-    {
-      "coverImg": "/images/project/chain.png",
-      "name": "Blockchain Landing Page",
-      "category": "UI/UX",
-      "tech": [
-        "Next.js",
-        "GSAP",
-        "Tailwind"
-      ],
-      "live": "#",
+      "live": "https://invoicebuilder-five.vercel.app/",
       "github": "https://github.com/codebyqamarshah-code"
     },
     {
@@ -207,6 +188,29 @@
       ],
       "live": "https://real-estate-delta-indol.vercel.app/",
       "github": "https://github.com/codebyqamarshah-code"
+    },
+    {
+      "coverImg": "/images/project/gpt clone.png",
+      "name": "Chat Gpt Clone",
+      "category": "Next.js",
+      "tech": [
+        "Next.js",
+        "Lucide Icons",
+        "Tailwind"
+      ],
+      "live": "https://gpt-clone-puce.vercel.app/",
+      "github": ""
+    },
+    {
+      "coverImg": "/images/project/hostle.png",
+      "name": "Hostle Management",
+      "category": "Tailwind",
+      "tech": [
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "live": "https://hotale-amber.vercel.app/",
+      "github": ""
     }
   ],
   "RecordData": [
@@ -227,7 +231,7 @@
     },
     {
       "imgSrc": "/images/records/star.svg",
-      "digit": "5+ Years",
+      "digit": "2+ Years",
       "desc": "Experience in modern web development and design"
     }
   ],
@@ -285,35 +289,371 @@
   ],
   "PlanData": [
     {
-      "type": "Fixed Project",
-      "price": {
-        "monthly": 499,
-        "yearly": 4500
-      },
-      "desc": "Ideal for startups needing a single custom solution.",
-      "option": [
-        "In-depth Technical Consultation",
-        "Responsive Custom Development",
-        "SEO and Performance Optimization",
-        "15 Days Post-Launch Support",
-        "Source Code & Documentation"
-      ]
+      "type": "WordPress Development",
+      "desc": "Perfect for simple business sites and blogs.",
+      "tiers": {
+        "Basic": {
+          "price": "$300 - $600",
+          "features": [
+            "3-5 Pages Website",
+            "Free Theme Setup",
+            "Mobile Responsive Design",
+            "Basic SEO Setup",
+            "Contact Form",
+            "Speed Optimization",
+            "Social Media Integration",
+            "7 Days Support"
+          ]
+        },
+        "Standard": {
+          "price": "$700 - $1,500",
+          "features": [
+            "6-10 Pages Website",
+            "Premium Theme Customization",
+            "Advanced Responsive Design",
+            "On-Page SEO Optimization",
+            "Blog Setup",
+            "Contact & Inquiry Forms",
+            "Speed & Performance Optimization",
+            "Security Plugin Setup",
+            "Google Analytics Integration"
+          ]
+        },
+        "Premium": {
+          "price": "$2,000 - $4,000",
+          "features": [
+            "Fully Custom WordPress Design",
+            "Advanced Animations",
+            "Custom Functionalities",
+            "SEO Optimized Structure",
+            "Security & Backup Setup",
+            "Booking/Appointment System",
+            "E-commerce Integration",
+            "Membership/Login System",
+            "API Integrations",
+            "30 Days Premium Support"
+          ]
+        }
+      }
     },
     {
-      "type": "Monthly Retainer",
+      "type": "Shopify Store",
       "featured": true,
-      "price": {
-        "monthly": 1499,
-        "yearly": 15000
-      },
-      "desc": "Perfect for businesses needing ongoing development.",
-      "option": [
-        "Dedicated Weekly Dev Hours",
-        "Priority Feature Development",
-        "Unlimited Technical Consultation",
-        "Continuous Performance Monitoring",
-        "24/7 Priority Support & Maintenance"
-      ]
+      "desc": "Complete e-commerce solutions for your brand.",
+      "tiers": {
+        "Basic": {
+          "price": "$500 - $1,000",
+          "features": [
+            "Shopify Store Setup",
+            "Free Theme Installation",
+            "5-10 Products Upload",
+            "Payment Gateway Setup",
+            "Mobile Responsive Design",
+            "Basic Store Customization",
+            "Essential Apps Installation",
+            "7 Days Support"
+          ]
+        },
+        "Standard": {
+          "price": "$1,200 - $2,500",
+          "features": [
+            "Premium Theme Customization",
+            "20-50 Products Upload",
+            "Conversion Optimization",
+            "Collection & Navigation Setup",
+            "Product Variants Setup",
+            "Apps Integration",
+            "Basic SEO Optimization",
+            "Email Marketing Setup",
+            "Speed Optimization"
+          ]
+        },
+        "Premium": {
+          "price": "$3,000 - $6,000",
+          "features": [
+            "Fully Custom Shopify Design",
+            "Advanced UX/UI Design",
+            "CRO Optimization",
+            "Automation Setup",
+            "Upsell & Cross-sell Features",
+            "Custom Sections Development",
+            "Advanced App Integrations",
+            "Marketing Integrations",
+            "Performance Optimization",
+            "30 Days Premium Support"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Frontend (HTML/JS)",
+      "desc": "Static and high-performance frontend sites.",
+      "tiers": {
+        "Basic": {
+          "price": "$300 - $800",
+          "features": [
+            "Static Website",
+            "Responsive Design",
+            "HTML, CSS & JavaScript",
+            "Landing Page Design",
+            "Contact Form",
+            "Basic Animations",
+            "Cross Browser Support",
+            "7 Days Support"
+          ]
+        },
+        "Standard": {
+          "price": "$900 - $2,000",
+          "features": [
+            "Advanced Responsive Website",
+            "Animations & Interactions",
+            "API Integration",
+            "Multi-Page Website",
+            "Performance Optimization",
+            "Reusable Components",
+            "SEO Friendly Structure",
+            "14 Days Support"
+          ]
+        },
+        "Premium": {
+          "price": "$2,500 - $5,000",
+          "features": [
+            "Advanced UI Development",
+            "Dashboard UI",
+            "Complex Animations",
+            "API & Third-Party Integrations",
+            "Admin Panels",
+            "Custom Features",
+            "Optimized Performance",
+            "Scalable Frontend Architecture",
+            "30 Days Support"
+          ]
+        }
+      }
+    },
+    {
+      "type": "React / Next.js",
+      "desc": "Advanced web apps with modern frameworks.",
+      "tiers": {
+        "Basic": {
+          "price": "$800 - $1,500",
+          "features": [
+            "Simple React Website",
+            "Responsive Design",
+            "Component-Based UI",
+            "Basic Routing",
+            "SEO Friendly Setup",
+            "Fast Loading Pages",
+            "Deployment Support",
+            "7 Days Support"
+          ]
+        },
+        "Standard": {
+          "price": "$1,800 - $4,000",
+          "features": [
+            "Dynamic React/Next.js App",
+            "API Integration",
+            "Authentication System",
+            "Dashboard UI",
+            "Reusable Components",
+            "State Management",
+            "Optimized Performance",
+            "SEO Optimization"
+          ]
+        },
+        "Premium": {
+          "price": "$5,000 - $10,000",
+          "features": [
+            "Full SaaS Frontend",
+            "Scalable Architecture",
+            "Advanced Authentication",
+            "Role-Based Dashboard",
+            "API & Database Integration",
+            "Payment Integration",
+            "Admin Panel",
+            "Advanced Animations",
+            "Deployment & Optimization",
+            "30 Days Premium Support"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Backend (Node.js)",
+      "desc": "Robust server-side logic and databases.",
+      "tiers": {
+        "Basic": {
+          "price": "$800 - $1,500",
+          "features": [
+            "Basic REST API",
+            "CRUD Operations",
+            "Express.js Setup",
+            "MongoDB Integration",
+            "Authentication Setup",
+            "API Documentation",
+            "7 Days Support"
+          ]
+        },
+        "Standard": {
+          "price": "$2,000 - $5,000",
+          "features": [
+            "Advanced Backend System",
+            "Authentication & Authorization",
+            "Database Design",
+            "Admin APIs",
+            "File Upload System",
+            "Security Optimization",
+            "API Optimization",
+            "Third-Party Integrations",
+            "14 Days Support"
+          ]
+        },
+        "Premium": {
+          "price": "$6,000 - $12,000",
+          "features": [
+            "Scalable Backend Architecture",
+            "Payment Integration",
+            "Advanced Security",
+            "Real-Time Features",
+            "Role Management",
+            "Cloud Deployment",
+            "API Rate Limiting",
+            "Database Optimization",
+            "Full Documentation"
+          ]
+        }
+      }
+    },
+    {
+      "type": "UI/UX Design",
+      "desc": "Modern and intuitive interface designs.",
+      "tiers": {
+        "Basic": {
+          "price": "$200 - $500",
+          "features": [
+            "Landing Page Design",
+            "Modern UI Layout",
+            "Mobile Responsive Design",
+            "Figma Design File",
+            "Basic Wireframe",
+            "2 Revisions"
+          ]
+        },
+        "Standard": {
+          "price": "$600 - $1,500",
+          "features": [
+            "Full Website UI Design",
+            "Multiple Pages Design",
+            "Design System",
+            "Responsive Layouts",
+            "Interactive Components",
+            "Prototypes",
+            "5 Revisions"
+          ]
+        },
+        "Premium": {
+          "price": "$2,000 - $5,000",
+          "features": [
+            "App UI/UX Design",
+            "Interactive Prototypes",
+            "Advanced User Flow",
+            "Dashboard Design",
+            "Design System & Assets",
+            "Premium Animations",
+            "Developer Ready Files",
+            "Unlimited Revisions"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Full Web App",
+      "desc": "Complete end-to-end web solutions.",
+      "tiers": {
+        "Basic": {
+          "price": "$3,000 - $6,000",
+          "features": [
+            "Simple Web Application",
+            "Admin Panel",
+            "Authentication System",
+            "Dashboard",
+            "Database Integration",
+            "Responsive Design",
+            "Basic APIs",
+            "14 Days Support"
+          ]
+        },
+        "Standard": {
+          "price": "$7,000 - $15,000",
+          "features": [
+            "SaaS MVP Development",
+            "Advanced Dashboard",
+            "Multi-User System",
+            "API Integrations",
+            "Subscription Features",
+            "Admin Controls",
+            "Performance Optimization",
+            "Deployment Support",
+            "30 Days Support"
+          ]
+        },
+        "Premium": {
+          "price": "$20,000 - $50,000",
+          "features": [
+            "Full Scalable SaaS Platform",
+            "Multi-Tenant Architecture",
+            "Payment Integration",
+            "Advanced Security",
+            "Custom Features",
+            "Real-Time Functionality",
+            "Cloud Deployment",
+            "Automation Features",
+            "Dedicated Support"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Monthly Maintenance",
+      "desc": "Keep your website updated and secure.",
+      "tiers": {
+        "Basic": {
+          "price": "$200 / mo",
+          "features": [
+            "Regular Website Updates",
+            "Weekly Backups",
+            "Basic Security Monitoring",
+            "Minor Bug Fixes",
+            "Performance Check",
+            "Email Support"
+          ]
+        },
+        "Standard": {
+          "price": "$500 / mo",
+          "features": [
+            "Priority Support",
+            "Advanced Bug Fixes",
+            "Monthly Optimization",
+            "Security Monitoring",
+            "Performance Optimization",
+            "Content Updates",
+            "SEO Monitoring"
+          ]
+        },
+        "Premium": {
+          "price": "$1,000+ / mo",
+          "features": [
+            "Dedicated Developer Support",
+            "24/7 Priority Support",
+            "Feature Additions",
+            "Advanced Security Monitoring",
+            "Server Management",
+            "Performance Scaling",
+            "Monthly Reports",
+            "Unlimited Minor Changes"
+          ]
+        }
+      }
     }
   ],
   "CategoryData": [
@@ -370,14 +710,6 @@
         {
           "label": "LinkedIn Profile",
           "href": "https://www.linkedin.com/in/qamar-shah-developer"
-        },
-        {
-          "label": "Live Demo",
-          "href": "https://eatiz-restaurant-updated.vercel.app/landing"
-        },
-        {
-          "label": "Technical Resume",
-          "href": "/resume.pdf"
         }
       ]
     }

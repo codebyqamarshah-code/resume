@@ -8,7 +8,7 @@ import ExperienceTimeline from './components/Home/Experience'
 import Specialize from './components/Home/Specialize'
 import Review from './components/Home/Review'
 import Pricing from './components/Home/Pricing'
-import ContactForm from './components/ContactForm'
+import ContactSection from './components/ContactForm'
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <Specialize />
       <Review />
       <Pricing />
-      <ContactForm />
+      <ContactSection />
     </main>
   )
 }

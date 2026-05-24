@@ -89,13 +89,13 @@ const Hero = () => {
 
           {/* Right Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative">
-            <div className="relative w-72 h-72 md:w-96 md:h-96">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
               {/* Decorative Rings */}
               <div className="absolute inset-0 border-2 border-primary/30 rounded-3xl rotate-6 scale-105 animate-pulse-slow" />
               <div className="absolute inset-0 border-2 border-blue-400/20 rounded-3xl -rotate-3 scale-110" />
               
               {/* Profile Wrapper */}
-              <div className="relative h-full w-full bg-darkmode rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl overflow-hidden group">
+              <div className="relative h-full w-full bg-darkmode rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl group">
                 <Image
                   src={getImgPath('/images/1.webp')}
                   alt="Syed Qamar Abbas"
@@ -106,27 +106,27 @@ const Hero = () => {
                 />
               </div>
 
-              {/* Floating Cards */}
-              <div className="absolute -bottom-6 -left-10 glass p-4 rounded-2xl shadow-xl animate-float">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-500">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" /><path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h.01a1 1 0 100-2H10zm3 0a1 1 0 000 2h.01a1 1 0 100-2H13zM7 13a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h.01a1 1 0 100-2H10zm3 0a1 1 0 000 2h.01a1 1 0 100-2H13z" clipRule="evenodd" /></svg>
+              {/* Floating Cards - Hidden on very small screens to avoid overflow */}
+              <div className="absolute -bottom-6 -left-6 sm:-left-10 glass p-3 sm:p-4 rounded-2xl shadow-xl animate-float hidden xs:block">
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-500">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" /><path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h.01a1 1 0 100-2H10zm3 0a1 1 0 000 2h.01a1 1 0 100-2H13zM7 13a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h.01a1 1 0 100-2H10zm3 0a1 1 0 000 2h.01a1 1 0 100-2H13z" clipRule="evenodd" /></svg>
                   </div>
                   <div>
-                    <p className="text-xs text-lightgrey">Completed</p>
-                    <p className="text-sm font-bold">150+ Projects</p>
+                    <p className="text-[10px] sm:text-xs text-lightgrey">Completed</p>
+                    <p className="text-xs sm:text-sm font-bold text-darkblue dark:text-white">15+ Projects</p>
                   </div>
                 </div>
               </div>
 
-              <div className="absolute top-10 -right-12 glass p-4 rounded-2xl shadow-xl animate-float delay-1000">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div className="absolute top-10 -right-6 sm:-right-12 glass p-3 sm:p-4 rounded-2xl shadow-xl animate-float delay-1000 hidden xs:block">
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   </div>
                   <div>
-                    <p className="text-xs text-lightgrey">Professional</p>
-                    <p className="text-sm font-bold">1.5+ Years Exp</p>
+                    <p className="text-[10px] sm:text-xs text-lightgrey">Started</p>
+                    <p className="text-xs sm:text-sm font-bold text-darkblue dark:text-white">Early 2024</p>
                   </div>
                 </div>
               </div>

@@ -1,15 +1,17 @@
 @import 'tailwindcss';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primary: #2f73f2;
-  --color-secondary: #f5f9ff;
-  --color-lightgrey: #547593;
-  --color-darkmode: #081738;
-  --color-darklight: #000f30;
-  --color-darkblue: #102d47;
-  --color-lightdarkblue: #112145;
+  --color-primary: #00E676;
+  --color-secondary: #121212;
+  --color-lightgrey: #888888;
+  --color-darkmode: #050505;
+  --color-darklight: #0A0A0A;
+  --color-darkblue: #F0F0F0;
+  --color-lightdarkblue: #1A1A1A;
 
   /* spacing */
   --spacing-45: 45%;
@@ -36,7 +38,7 @@
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-linear-to-r from-primary to-blue-400;
+    @apply bg-clip-text text-transparent bg-linear-to-r from-primary to-[#80ffbf];
   }
 }
 
@@ -70,11 +72,11 @@
   }
 
   .btn-primary {
-    @apply px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300 shadow-lg shadow-primary/20 hover:-translate-y-1 active:translate-y-0;
+    @apply px-8 py-3 bg-primary text-black rounded-xl font-bold hover:bg-[#00c868] transition-all duration-300 shadow-lg shadow-primary/20 hover:-translate-y-1 active:translate-y-0;
   }
 
   .btn-secondary {
-    @apply px-8 py-4 border-2 border-primary text-primary dark:text-white rounded-xl font-semibold hover:bg-primary/5 transition-all duration-300 hover:-translate-y-1 active:translate-y-0;
+    @apply px-8 py-3 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary/5 transition-all duration-300 hover:-translate-y-1 active:translate-y-0;
   }
 }
 
@@ -100,4 +102,29 @@
 
 .progress-fill {
   animation: progressLoad 1.5s ease-out forwards;
+}
+
+/* Slick Carousel Custom Styles */
+.slick-dots li button:before {
+  color: #00E676 !important;
+  font-size: 10px !important;
+  opacity: 0.3 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #00E676 !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #00E676 !important;
+}
+
+.projects-slider .slick-list {
+  margin: 0 -15px;
+  padding: 20px 0 !important;
+}
+
+.projects-slider .slick-slide > div {
+  padding: 0 15px;
 }

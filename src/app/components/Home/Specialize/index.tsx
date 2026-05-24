@@ -20,42 +20,54 @@ const Specialize = () => {
       .catch(err => console.error("Error fetching skills:", err))
   }, [])
 
+  // Duplicate skills for seamless loop
+  const duplicatedSkills = [...skills, ...skills, ...skills]
+
   return (
-    <section id='expertise' className='scroll-mt-12 py-24 bg-white dark:bg-darklight'>
-      <div className='container'>
-        <div className='text-center max-w-2xl mx-auto mb-16'>
-          <p className="text-primary font-bold tracking-[4px] uppercase text-sm mb-4">Technical Proficiecy</p>
-          <h2 className='mb-6'>My Modern Tooling & <span className="gradient-text">Skills</span></h2>
+    <section id='expertise' className='scroll-mt-12 py-32 bg-white dark:bg-darklight overflow-hidden'>
+      <div className='container px-4'>
+        <div className='text-center max-w-3xl mx-auto mb-20'>
+          <p className="text-primary font-bold tracking-[6px] uppercase text-xs mb-4">Technical Stack</p>
+          <h2 className='mb-8'>My Professional <span className="gradient-text">Skillset</span></h2>
           <p className='text-lg font-normal text-lightgrey'>
-            I work with the latest and most efficient tools to deliver high-quality digital solutions. 
-            From modern frameworks to robust backend systems, here is my core stack.
+            I specialize in the following technologies to build fast, scalable, and user-friendly digital products.
           </p>
         </div>
 
-        <div className='grid lg:grid-cols-2 grid-cols-1 gap-12'>
-          {skills.map((skill, i) => (
-            <div key={i} className='group space-y-4 p-8 rounded-3xl bg-secondary dark:bg-lightdarkblue border border-black/5 dark:border-white/5 transition-all duration-300 hover:border-primary/50'>
-              <div className='flex items-center justify-between'>
-                <div className='flex items-center gap-4'>
-                  <div className='w-12 h-12 rounded-xl bg-white dark:bg-darkmode flex items-center justify-center p-2 shadow-sm'>
-                    <Icon icon={skill.icon} width={30} />
-                  </div>
-                  <h3 className='text-xl font-bold group-hover:text-primary transition-colors'>{skill.name}</h3>
+        {/* Scrolling Marquee Container */}
+        <div className='relative flex overflow-hidden group py-10'>
+          <div className='flex animate-scroll-infinite gap-10 whitespace-nowrap'>
+            {duplicatedSkills.map((skill, i) => (
+              <div 
+                key={i} 
+                className='flex flex-col items-center justify-center gap-6 p-8 min-w-[200px] rounded-[2.5rem] bg-secondary dark:bg-lightdarkblue border border-black/5 dark:border-white/5 transition-all duration-500 hover:border-primary/40'
+              >
+                <div className='w-20 h-20 md:w-24 md:h-24 rounded-3xl bg-white dark:bg-darklight flex items-center justify-center p-5 shadow-sm group-hover:scale-110 transition-transform duration-500'>
+                   <Icon icon={skill.icon} width="100%" height="100%" />
                 </div>
-                <span className='text-lg font-bold text-primary'>{skill.level}%</span>
+                <h3 className='text-base md:text-lg font-bold text-center group-hover:text-primary transition-colors'>{skill.name}</h3>
               </div>
-              
-              {/* Progress Bar Container */}
-              <div className='h-3 w-full bg-black/5 dark:bg-white/10 rounded-full overflow-hidden'>
-                <div 
-                  className='h-full bg-linear-to-r from-primary to-blue-400 rounded-full progress-fill'
-                  style={{ '--progress-width': `${skill.level}%` } as React.CSSProperties}
-                />
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          
+          {/* Gradients for smooth fade out at edges */}
+          <div className="absolute inset-y-0 left-0 w-24 bg-linear-to-r from-white dark:from-darklight to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-24 bg-linear-to-l from-white dark:from-darklight to-transparent z-10" />
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.33%); }
+        }
+        .animate-scroll-infinite {
+          animation: scroll 30s linear infinite;
+        }
+        .animate-scroll-infinite:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </section>
   )
 }
